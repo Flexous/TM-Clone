@@ -8,9 +8,6 @@ public class Club extends Object
     private ArrayList<String> historicNames = new ArrayList<>();
     
     private ArrayList<Player> players = new ArrayList<>();
-    private ArrayList<Player> loanedPlayers = new ArrayList<>();
-
-    private double marketvalue;
 
     public Club()
     {
@@ -35,20 +32,5 @@ public class Club extends Object
     public ArrayList<Player> getPlayers()
     {
         return players;
-    }
-
-    public ArrayList<Player> getLoanedPlayers()
-    {
-        return loanedPlayers;
-    }
-
-    public double getMarketvalue()
-    {
-        return marketvalue;
-    }
-
-    public void setMarketvalue(double marketvalue)
-    {
-        this.marketvalue = marketvalue;
     }
 }

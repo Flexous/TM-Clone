@@ -12,7 +12,11 @@ public class Player extends Object
 	private Location birthplace;
 	private int size;
 
+	private PlayerPosition playerPosition;
+
 	private ImageIcon image;
+
+	private Club loanClub;
 
 	public Player() 
 	{
@@ -69,6 +73,16 @@ public class Player extends Object
 		this.size = size;
 	}
 
+	public PlayerPosition getPlayerPosition()
+	{
+		return playerPosition;
+	}
+
+	public void setPlayerPosition(PlayerPosition playerPosition)
+	{
+		this.playerPosition = playerPosition;
+	}
+
 	public ImageIcon getImage()
 	{
 		return image;
@@ -77,5 +91,15 @@ public class Player extends Object
 	public void setImage(ImageIcon image)
 	{
 		this.image = image;
+	}
+
+	public Club getLoanClub()
+	{
+		return loanClub;
+	}
+
+	public void setLoanClub(Club loanClub)
+	{
+		this.loanClub = loanClub;
 	}
 }
